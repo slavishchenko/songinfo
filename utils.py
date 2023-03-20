@@ -21,6 +21,7 @@ def save_to_file(path: str, song: object, audio_analysis: object) -> bool:
                 case "n":
                     return False
         else:
+            print(f"{proceed} is not a valid input. Choose either y or n.")
             return False
 
 
