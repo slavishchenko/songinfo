@@ -58,11 +58,15 @@ def main():
                                     PATH_TO_DIRECTORY, song, audio_analysis
                                 ):
                                     print(f"Saved!\nFile location: {PATH_TO_DIRECTORY}")
+                                else:
+                                    print("Something went wrong. Please, try again.")
                             else:
                                 if save_to_file(
                                     PATH_TO_DIRECTORY, song, audio_analysis
                                 ):
                                     print(f"Saved!\nFile location: {PATH_TO_DIRECTORY}")
+                                else:
+                                    print("Something went wrong. Please, try again.")
                         case "n":
                             quit()
                 else:
