@@ -1,11 +1,11 @@
+import logging
 import os
 import sys
-import logging
 import time
 
 import dotenv
 
-from client import Client
+from spotify.client import Client
 from utils import save_to_file
 
 
