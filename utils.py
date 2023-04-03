@@ -1,4 +1,5 @@
 import os
+
 from slugify import slugify
 
 
@@ -36,8 +37,6 @@ def write(file_path: str, song: object, audio_analysis: object) -> bool:
             f.write(f"\nTempo: {round(audio_analysis.tempo)} BPM")
             f.write(f"\nTime Signature: {audio_analysis.time_signature}/4")
             f.write(f"\nKey: {audio_analysis.key}")
-            f.write(
-                f"\nDuration: {round(audio_analysis.duration / 60, ndigits=2)} minutes"
-            )
+            f.write(f"\nDuration: {audio_analysis.length} minutes")
     except:
         return False
